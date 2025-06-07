@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="game"></canvas>
+    <script src="https://unpkg.com/kaboom@3000.0.1/dist/kaboom.js"></script>
+    <script>
+        // Initialize Kaboom
+        window.k = kaboom({
+            canvas: document.getElementById("game"),
+            background: [0, 0, 255],
+            width: 800,
+            height: 600,
+            scale: 1,
+            debug: true,
+            global: true,
+        });
+    </script>
+    <script src="game.js"></script>
+</body>
+</html> 
